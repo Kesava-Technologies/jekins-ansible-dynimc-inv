@@ -29,7 +29,7 @@ pipeline {
     //Run the playbook
     stage('RunPlaybook') {
       steps {
-        sleep 60
+        sleep 60  //in sec
         sh "whoami"
         //List the dymaic inventory just for verification
         sh "ansible-inventory --graph -i inventory/aws_ec2.yaml"
